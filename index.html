@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  
+    h1{
+      font-size: 70px;
+      font-family: 'Times New Roman', Times, serif;
+      color: antiquewhite;
+    }
+    pre{
+      font-size: 20px;
+      color: antiquewhite;
+    }
+  
+
+    body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  background:rgb(24, 3, 3);
+
+}
+
+#myVideo {
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 737px;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.card{
+  height: 400px;
+  width: 300px;
+
+  margin-top: -650px;
+  margin-left: 1200px;
+}
+.model{
+  background-color: rgb(64, 62, 62);
+  height: 1800px;
+  width: 1400px;
+  margin-top: 300px;
+  margin-left: 50px;
+}
+.heding{
+  margin-left: 600px;
+  font-size: 90px;
+  font-family: 'Times New Roman', Times, serif;
+  /* float: left; */
+  color:beige;
+}
+.img1{
+  margin-left: 90px;
+  margin-top: 30px;
+}
+.img2{
+  margin-left:800px ;
+  margin-top: -200px;
+}
+.img3{
+  margin-left: 90px;
+  margin-top: -200px;
+
+}
+  </style>
+</head>
+
+            
+       <video autoplay  loop id="myVideo">
+        <source src="./backgarund/SnapSave.io-Apna Bana Le Video Song 4k 60fps- Bhediya-(1080p60) (1).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <!-- <div class="card">  <video autoplay   id="myVideo">
+        <source src="./backgarund/production ID_5085845.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video></div> -->
+      
+      <div class="content">
+        <h1>Summer Beauty</h1>
+  <pre>
+Curabitur nec orci quis neque ultricies porta. <br>Suspendisse blandit ipsum nec nibh.
+                </pre>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+        
+       <div class="model">
+         <span  class="heding" >Model</span> 
+         <div class="img1"  ><img src="./backgarund/2.jpg" alt=""></div>
+         <div class="img2" ><img src="./backgarund/1.png"alt=""></div>
+         <div class="img3" ><img src="./backgarund/3.jpg" alt=""></div>  
+         
+        </div>
+
+      
+      
+      
+</body>
+<script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
